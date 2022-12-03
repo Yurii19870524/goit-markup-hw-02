@@ -72,9 +72,7 @@ color: var(--color-item);
 
 }
 
-.phone-number {
-font-weight: 400;
-font-size: 16px;
+.contact-link {
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-information);
@@ -83,18 +81,8 @@ color: var(--color-information);
 .nav-link:hover,
 .logo-box:hover,
 .logo:hover,
-.phone-number:hover, 
-.email-address:hover { 
+.contact-link:hover { 
  color: var(--color-interactive); 
-}
-
-.email-address {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--color-information);
- 
 }
 
 /*================Main Content================ */
@@ -114,27 +102,39 @@ color:var(--color-main);
 
 }
 
-.motol-btn {
-font-family: inherit;
-font-weight: 400;
+.button {
+font-weight: 600;
 font-size: 16px;
-line-height: 1.18;
-cursor: pointer;
-display: flex;
+line-height: 1.19;
 align-items: center;
+cursor: pointer;
 letter-spacing: 0.04em;
-color: var(--color-active);
+color: var(--color-main);
+width: 170px;
+height: 51px;
+left: 635px;
+top: 432px;
+
+background: var(--color-active);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 
-.motol-btn:hover,
-.motol-btn:focus {
-background-color: var(--color-active);
+.button:hover {
+background: var(--color-active);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ border-radius: 4px; 
 }
+
+.button:active {
+background: #404BBF;
+}
+
 
 /* Privileges */
 
-.service-title {
- font-weight: 600;
+.team-name {
+font-weight: 600;
 font-size: 20px;   
 line-height: 1.2;
 letter-spacing: 0.02em;
@@ -142,14 +142,15 @@ color: var(--color-item);
 
 }
 
-.text {
+.team-position,
+.service-text {
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-information);
 
 }
 
-.section {
+.section-title {
  font-weight: 600;
 font-size: 36px;
 line-height: 1.11;
@@ -181,8 +182,6 @@ color: var(--color-active);
 }
 
 .footer-text {
-font-weight: 400;
-font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
@@ -190,6 +189,25 @@ color: #E7E9FC;
 }
 
 /*================PORTFOLIO==================*/
+
+
+.motol-btn {
+font-family: inherit;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+cursor: pointer;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color: var(--color-active);
+}
+
+.motol-btn:hover,
+.motol-btn:focus {
+background-color: var(--color-active);
+color: var(--color-main);
+}
 
 .project-title {
 font-weight: 600;
